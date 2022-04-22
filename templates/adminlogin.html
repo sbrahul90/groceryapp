@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <style>
+        body{
+            background-image: url("static/loginbg.jpeg");
+            background-size: 1700px;
+        }
+        input::placeholder{
+            text-align: center;
+        }
+        .container{
+            background-image: url("static/login and register box user.jpeg");
+            border-radius: 40px;
+            background-size: 1000px;
+            padding-top: 15px;
+            padding-left: 80px;
+            padding-right: 10PX;
+            padding-bottom: 30px;
+            margin-left: 350px;
+            margin-top: 160px;
+            width: 300px;
+        }
+        .head{
+            font-size:20px;
+            font-style: italic;
+            border-radius: 20px;
+            color:black;
+        }
+        .reg{
+            position: relative;
+            top: 10px;
+            left: -40px;
+            text-align:center;
+            font-size:30px;
+            font-style: italic;
+            color:rgb(14, 60, 81);
+        }
+        .regbutton{
+            background-color:rgba(128, 187, 181, 0);
+            position: relative;
+            top: 10px;
+            left: 45px;
+            width: 150px;
+            text-align:center;
+            font-size:20px;
+            font-style: italic;
+            border-radius: 15px;
+            color:black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="reg">Groce Wheels </h1>
+        <br><br>
+        <form action="/adminlog" method="post">
+        <label for="email">
+            <input class="head" type="email" name="email" id="email" placeholder="Enter email-id " ><br>
+        </label> <br>
+        <label for="pass">
+            <input class="head" type="password" name="password"id="pass"placeholder="Enter Password">
+        </label>
+        <br><br>
+        <button class="regbutton">Login</button>
+        <br><br>
+    </div>
+</body>
+</html>

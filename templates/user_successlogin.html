@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(0, 128, 0, 0.758);
+        }
+        .container{
+            background-color: rgba(255, 255, 255, 0.855);
+            margin-top: 100px;
+            width: 800px;
+            padding-left: 80px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-left: 220px;
+        }
+        .container2{
+            background-color: white;
+            margin-top: -10px;
+            margin-left: -10px;
+            width: 1400px;
+
+        }
+        .dairy{
+            margin-left: 250px;
+            margin-top: -270px;
+        }
+        .bev{
+            margin-left: 500px;
+            margin-top: -270px;
+        }
+        .Masala{
+            margin-left: 0px;
+        }
+        .snacks{
+            margin-left:250px;
+            margin-top: -270px;
+        }
+        .choco{
+            margin-left: 500px;
+            margin-top: -270px;
+        }
+        .bakery{
+            margin-left: 0px;
+        }
+        .HPC{
+            margin-left: 250px;
+            margin-top: -270px;
+        }
+        .Pet{
+            margin-left: 500px;
+            margin-top: -270px;
+        }
+        .search{
+            margin-top: -80px;
+            text-align: center;
+        }
+        input[type=text]{
+            width: 500px;
+            height: 30px;
+        }
+        input::placeholder{
+            font-size: 20px;
+            text-align: center;
+        }
+        .searchlogo{
+            margin-top: -33px;
+            margin-left: 950px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <img src="static/logo.jpeg" alt="GroceWheelsLogo" width="200px">
+    </div>
+    <div class="search">
+        <form action="/result" method="POST">
+            <input type="text" name="search" placeholder="Search for Product">
+            <div class="searchlogo">
+            <button><img src="static/searchbar.jpeg" alt="Search" width="30px"></button>
+    </div>
+        </form>
+    </div>
+    <div class="container">
+        <div>
+            <a href="/fruits_vegetables"><img src="static/fruits_vegetables.jpeg" alt="fruits and vegetables" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 10px; color: black; font-size: 20px;">Fruits and Vegetables</p>
+            </a>
+        </div>
+        <div class="dairy">
+            <a href="/Dairy"><img src="static/milk.jpeg" alt="Dairy Product" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 35px; color: black; font-size: 20px;">Dairy Product</p>
+            </a>
+        </div>
+        <div class="bev">
+            <a href="/Beverages"><img src="static/bevrages.jpeg" alt="Beverages" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 55px; color: black; font-size: 20px;">Beverages</p>
+            </a>
+        </div><br><br><br><br>
+        <div class="Masala">
+            <a href="/spice_masala"><img src="static/masala.jpeg" alt="Spices & Masalas" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 30px; color: black; font-size: 20px;">Spices & Masalas</p>
+            </a>
+        </div>
+        <div class="snacks">
+            <a href="/Snacks"><img src="static/snacks.jpeg" alt="Snacks" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 65px; color: black; font-size: 20px;">Snacks</p>
+            </a>
+        </div>
+        <div class="choco">
+            <a href="/Chocolates"><img src="static/chocolate.jpeg" alt="Chocolates" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 50px; color: black; font-size: 20px;">Chocolates</p>
+            </a>
+        </div><br><br><br><br>
+        <div class="bakery">
+            <a href="/bakery"><img src="static/bakery.jpeg" alt="Bakery Items" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 40px; color: black; font-size: 20px;">Bakery Items</p>
+            </a>
+        </div>
+        <div class="HPC">
+            <a href="/home_and_personal"><img src="static/homeitems.jpeg" alt="Home & PersonalCare" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 10px; color: black; font-size: 20px;">Home & PersonalCare</p>
+            </a>
+        </div>
+        <div class="Pet">
+            <a href="/petfood"><img src="static/petfood.jpeg" alt="Pet Foods" width="200px" height="200px" style="border-radius: 20px;">
+                <p style="position: relative; left: 60px; color: black; font-size: 20px;"> Pet Foods</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

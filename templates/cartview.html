@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <style>
+        body{
+            background-color: powderblue;
+            background-size: 1600px;
+        }
+        .cont{
+            background-color:rgba(173, 216, 230, 0.311);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-left: 600px;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 300px;
+        }
+        .t{
+            align-items: center;
+            border: 1px solid green;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1 style="text-align:center;"> Available products </h1>
+<form>
+    <a href="/user_sucess"><p style="font-size:25px; color:black;margin-left:10px;"> Goback </p></a>
+</form>
+{% for x in rows %}
+<form action="/savekart" method="post">
+    <div class="cont">
+        <p class="t">{{x.pname}}</p>
+        <p class="t">{{x.brand}}</p>
+        <p class="t">{{x.price}}</p>
+        <input type="hidden" name="name" value="{{x.pname}}">
+        <input type="hidden" name="brand" value="{{x.brand}}">
+        <input type="hidden" name="price" value="{{x.price}}">
+        <input type="number" name="quantity" value="0">
+        <button class="t"> Add to cart</button>
+    </div>
+</form>
+{% endfor %}
+<br><br>
+</body>
+</html>

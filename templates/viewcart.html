@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <style>
+        body{
+            background-color: turquoise ;
+            background-size: 1600px;
+        }
+        table{
+            font-size: 20px;
+            margin-left: 150px;
+            margin-top: 100px;
+            border: 1px solid green;
+        }
+        th{
+            background-color:rgba(12, 199, 146, 0.858);
+            font-style: italic;
+            text-transform: uppercase;
+            padding: 10px 60px 10px 60px;
+        }
+        th:first-child{
+            border-top-left-radius: 10px;
+        }
+        td{
+            background-color:wheat;
+            border-radius: 10px;
+            padding: 10px 60px 10px 60px;
+        }
+        h3{
+            text-align: center;
+            font-size: 30px;
+            color:rgb(255, 0, 208);
+            position: relative;
+            top:120px;
+            text-transform: uppercase;
+            font-style:italic;
+        }
+        .regbutton a button{
+            background-color: rgba(2, 12, 18, 0);
+            padding: 10px;
+            margin-left: 400px;
+            width: 150px;
+            text-align:center;
+            font-size:20px;
+            font-style: italic;
+            border-radius: 15px;
+            color:rgba(8, 1, 16, 0.989);
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align:center;"> you cart </h1>
+<table border="6">
+    <thead>
+        <td>Product Name</td>
+        <td>Total price[RS]</td>
+        <td>Quantity</td>
+    </thead>
+
+    {% for x in rows %}
+    <tr>
+            <td>{{x["pdName"]}}</td>
+            <td>{{x["price"]}}</td>
+            <td>{{x["quantity"]}}</td>
+
+            <td><form action="/deletecart" method="post">
+                <input type="hidden" name="name" value="{{x.pdName}}">
+                <button>Delete</button>
+            </form></td>
+
+    </tr>
+
+
+    {% endfor %}
+</table>
+<br><br>
+<form>
+    <a href="/saveorder"><p style="font-size:25px; color:white; text-align:center;"> OrderNow </p></a>
+</form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register page</title>
+    <style>
+        body{
+            background-image: url("static/loginbg.jpeg");
+            background-size: 1700px;
+        }
+        .container{
+            background-image: url("static/login and register box user.jpeg");
+            background-size: 1000px;
+            border-radius: 40px;
+            padding-top: 5px;
+            padding-left: 50px;
+            padding-right: 50PX;
+            padding-bottom: 70px;
+            margin-left: 250px;
+            margin-top: 40px;
+            width: 400px;
+        }
+        .head{
+            font-size:16px;
+            font-style: italic;
+            border-radius: 20px;
+            color: rebeccapurple;
+        }
+        .regbutton{
+            background-color:rgba(50, 169, 205, 0);
+            position: relative;
+            left: 120px;
+            bottom: -35px;
+            font-size:20px;
+            font-style: italic;
+            border-radius: 15px;
+            color:black;
+        }
+        .reg{
+            position: relative;
+            top: 80px;
+            left: -150px;
+            text-align:center;
+            font-size:30px;
+            font-style: italic;
+            color:black;
+        }
+        input::placeholder{
+            text-align: center;
+        }
+        h1{
+            position: relative;
+            top: 0px;
+            left: 30px;
+            font-size:55px;
+            font-style: italic;
+            color:black;
+        }
+    </style>
+
+
+</head>
+<body>
+        <h1>Groce Wheels</h1>
+
+        <div class="container">
+        <p class="reg" style="position: relative; left: -80px; top: 0px;">Create new account</p>
+            <form action="/uadd" method="post">
+                <label for="username">
+                    <input class="head" type="text" name="name"id="username" placeholder="Enter Name">
+                </label>&nbsp;&nbsp;
+                <label for="add">
+                    <input class="head" type="text" name="address"id="add"placeholder="Enter address">
+                </label> <br> <br> <br>
+                <label for="age">
+                    <input class="head" type="date" name="age"id="age"placeholder="Enter Age">
+                </label>&nbsp;&nbsp;
+                <label for="contact">
+                    <input class="head" type="text" name="contact"id="contact"placeholder="Enter contact">
+                </label> <br> <br><br>
+                <label for="email">
+                    <input class="head" type="email" name="email"id="email"placeholder="Enter Email">
+                </label>&nbsp;&nbsp;
+                <label for="pass">
+                    <input class="head" type="password" name="pass"id="pass"placeholder="Password">
+                </label><br><br><br>
+                <label for="cpass">
+                    <input class="head" type="password" name="cpass"id="cpass"placeholder="Confirm Password">
+                </label> <br><br> <br>
+                <label for="Male">
+                    <input class="head" type="radio" name="gender"id="male" value="Male">Male
+                </label>
+                <label for="Female">
+                    <input class="head" type="radio" name="gender"id="female" value="Female">Female
+                </label>
+                <label for="others">
+                    <input class="head" type="radio" name="gender"id="others" value="Others">Others
+                </label>
+                <button class="regbutton">Create account</button>
+                </form>
+        </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

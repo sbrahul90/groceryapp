@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <style>
+        body{
+            background-color: turquoise;
+        }
+        .reg input{
+            margin-left: 20px ;
+            padding-left: 20px;
+        }
+        .map{
+            background-color: powderblue;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            margin-top: 80px;
+            margin-left: 600px;
+            width: 250px;
+        }
+        .regbutton{
+            margin-left: 80px ;
+            padding-left: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select the Category And Add </h1>
+    <div class="map">
+        <form action="/add" method="post">
+             <label for="lang">Category</label>
+              <select name="languages" id="lang">
+                <option value="None">Select catagory</option>
+                <option value="Fruit_Vegetable">Fruits and Vegetable</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Beverages">Beverages</option>
+                <option value="Pet food">Pet food</option>
+                <option value="Chocolates">Chocolates</option>
+                <option value="Spices & Masalas">Spices and Masalas</option>
+                <option value="Home and PersonalCare">Home and PersonalCare</option>
+              </select>
+              <br><br><br><br>
+            <div class="reg">
+                <input type="number" name="id" placeholder="product ID number"/>
+                <br><br><br><br>
+                <input type="text" name="pname" placeholder="Name of Product"/>
+                <br><br><br><br>
+                <input type="text" name="brand" placeholder="Brand of the Product"/>
+                <br><br><br><br>
+                <input type="text" name="price" placeholder="Enter the Price">
+                <br><br><br><br>
+                <input type="text" name="quantity" placeholder="Quantity">
+            </div>
+            <br><br>
+            <br>
+            <br>
+            <button class="regbutton">ADD</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

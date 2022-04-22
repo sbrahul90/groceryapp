@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+<h1> User registered information </h1>
+<table border=10>
+    <thead>
+        <td>Username</td>
+        <td>Address</td>
+        <td>Date of birth</td>
+        <td>Contact</td>
+        <td>Email</td>
+        <td>Password</td>
+        <td>Gender</td>
+    </thead>
+    {% for x in rows %}
+    <tr>
+            <td>{{x["name"]}}</td>
+            <td>{{x["address"]}}</td>
+            <td>{{x["age"]}}</td>
+            <td>{{x["contact"]}}</td>
+             <td>{{x["email"]}}</td>
+            <td>{{x["password"]}}</td>
+            <td>{{x["gender"]}}</td>
+
+        </tr>
+    {% endfor %}
+</table>
+<br><br>
+<a href="/">Go back to home page</a>
+</body>
+</html>
+

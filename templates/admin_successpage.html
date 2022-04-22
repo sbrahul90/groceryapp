@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Groce Wheels</title>
+    <style>
+        body{
+            background-image: url("static/welcome_gro.jpeg");
+        }
+        .imge{
+            margin-top: -140px;
+            margin-left: -10px;
+        }
+        .textalign{
+
+            animation-name: blinker;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            top: -290px;
+            bottom: 1000px;
+            left: 1300px;
+            border-radius: 20px;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        .contacttextalign{
+
+            animation-name: blinker;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+            top: -320px;
+            bottom: 1000px;
+            left: 10px;
+            border-radius: 20px;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        .headtitle{
+            position: relative;
+            text-align:center;
+            top: -160px;
+            font-size: 50px;
+            font-style: italic;
+            color:rgb(2, 13, 22);
+        }
+        .head{
+            position: relative;
+            text-align:center;
+            top: 100px;
+            font-size: 50px;
+            font-style: italic;
+            color:rgb(2, 13, 22);
+        }
+        .enjoy{
+            margin-top: -515px;
+            margin-left: 50px;
+            font-size: 60px;
+            color: rgb(251, 9, 9);
+        }
+    </style>
+
+</head>
+<body>
+    <img src="static/logo.jpeg" alt="Groce Wheels" width="150px">
+    <div>
+        <h3 class="headtitle" style="font-size: 60px;">Groce Wheels</h3>
+    </div>
+    <div class="imge">
+        <img src="static/welcomepage.jpeg" alt="Groce Wheels" width="1550px" height="530px">
+    </div>
+    <p class="enjoy">Feel Free</p>
+    <!--this is welcome line-->
+        <div>
+            <a class="textalign" href="/productview">View Products</a>
+            <br><br><a class="textalign" href="/adminadd">Add Products</a>
+            <br><br><a class="textalign" href="/vorder">View Order</a>
+            <br><br><a class="contacttextalign" href="/"><p>Log Out</p></a>
+        </div>
+        <p class="head"><marquee direction="right" scrollamount="10"> Grocery At your Fingertips</marquee></p>
+    </body>
+</html>
+

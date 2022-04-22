@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: turquoise;
+           }
+           table{
+            font-size: 30px;
+            margin-left: 650px;
+            margin-top: 100px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align:center;"> Enter the card details and proceed the payment </h1>
+    <form action="/paydone" method="post">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="name" placeholder="Cardholder Name" data-error="this field cannot be empty" style="text-align:center;">
+                    <br><br><input type="number" name="cardnumber" placeholder="cardnumber" data-error="this field cannot be empty" style="text-align:center";>
+                    <br><br><input type="number" name="cvv" placeholder="Cvv" data-error="this field cannot be empty" style="text-align:center;">
+                    <br><br><input type="date" name="date" placeholder="Expiry date" data-error="this field cannot be empty" style="text-align:center;">
+                    <br><br><button style="text-align:center;">Pay</button>
+                </td>
+            </tr>
+        </table>
+
+
+</body>
+</html>
